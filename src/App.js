@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Container from "react-bootstrap/Container";
+import IntroLines from './components/IntroLines';
+import ScriptTag from 'react-script-tag';
+import "./App.css";
+import Torch from "./components/Torch";
+import BgAnimation from './components/BgAnimation'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Container fluid="md" className="main">
+        <div className="intro">
+          <BgAnimation />
+          <Torch />
+          <h3 className="name display-4 text-center">Tanish Singh Chouhan.</h3>
+          <IntroLines />          
+        </div>
+      </Container>
+    </>
   );
 }
 

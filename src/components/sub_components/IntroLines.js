@@ -1,5 +1,5 @@
 import React from "react";
-import IndianFlag from "../img/india.png";
+import IndianFlag from "../../img/india.png";
 
 const IntroLines = () => {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import './components_css/BgAnimation.css'
+import '../components_css/BgAnimation.css';
 
 
 const BgAnimation = () => {

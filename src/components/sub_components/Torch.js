@@ -1,6 +1,6 @@
 import React from "react";
-import flashLight from "../img/flashlight.svg";
-import '../App.css'
+import flashLight from "../../img/flashlight.svg";
+import '../components_css/Torch.css'
 
 
 const Torch = () => {

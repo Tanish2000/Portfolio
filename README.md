@@ -6,4 +6,7 @@ Step 1 : Write 'git clone https://github.com/Tanish2000/Portfolio' in cmd.<br>
 Step 2 : Write 'cd Portfolio' in cmd.<br>
 Step 3 : Write 'npm start' in cmd.
 
-Now a new tab will open in your default browser with 'http://localhost:3000/' with this address and here you go...
+Now a new tab will open in your default browser with 'http://localhost:3000/'. This is actually a development server running on port 3000.<br>
+<br>
+
+No &#169; Copyright issues , feel free to copy..

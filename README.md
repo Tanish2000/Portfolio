@@ -1,4 +1,4 @@
-My Portfolio Website made with React.js. (under development)
+My Portfolio Website made with React.js . (under development)
 You can run it on your pc in few simple steps as follows..
 
 For running this on your pc :<br> 

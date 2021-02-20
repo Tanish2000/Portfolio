@@ -4,8 +4,10 @@
   box-sizing: border-box;
 }
 
-.main {
+/* .main {
   margin: 0.7vw;
+} */
+
+.firstSection{
+  margin-top : 20px;
 }
-
-

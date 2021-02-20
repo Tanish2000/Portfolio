@@ -1,6 +1,7 @@
 .torch {
     position: absolute;
-    animation: vibrateLight 10s linear infinite;
+    animation: vibrateLight 10s linear;
+    transform: translateX(-715px) translateY(78px) rotate(37deg);
   }
   
   @keyframes vibrateLight {

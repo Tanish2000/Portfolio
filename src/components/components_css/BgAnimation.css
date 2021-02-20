@@ -1,127 +1,162 @@
 .bg_area div {
-    position: absolute;
-    text-shadow: 0 0 10px rgb(189, 189, 0), 0 0 20px rgb(189, 189, 0), 0 0 30px rgb(77, 90, 240), 0 0 40px rgb(77, 90, 240), 0 0 50px rgb(77, 90, 240), 0 0 60px rgb(77, 90, 240), 0 0 70px #e60073;
+    position: fixed;
+    /* text-shadow: 0 0 10px rgb(12, 12, 0), 0 0 20px rgb(189, 189, 0), 0 0 30px rgb(77, 90, 240), 0 0 40px rgb(77, 90, 240), 0 0 50px rgb(77, 90, 240), 0 0 60px rgb(77, 90, 240), 0 0 70px #e60073; */
+    text-shadow: 0px 0px 9px #f50abe, 0px 0px 15px #0097e8, 0px 0px 5px #0a41f5;
   }
   
   .bg_area div:nth-child(1) {
-    top: 12%;
+    top: 50%;
     left: 90%;
-    animation: animate_bg 10s linear infinite;
+    animation: animate_bg 15s linear infinite;
   }
   .bg_area div:nth-child(2) {
-    top: 25%;
+    top: 55%;
     left: 68%;
-    animation: animate_bg 10s linear infinite;
+    animation: animate_bg 15s linear infinite;
   }
   .bg_area div:nth-child(3) {
     top: 32%;
     left: 30%;
-    animation: animate_bg 10s linear infinite;
+    animation: animate_bg 15s linear infinite;
   }
   .bg_area div:nth-child(4) {
     top: 33%;
     left: 82%;
-    animation: animate_bg 10s linear infinite;
+    animation: animate_bg 15s linear infinite;
   }
   .bg_area div:nth-child(5) {
     top: 27%;
     left: 2%;  
-    animation: animate_bg2 10s linear infinite;
+    animation: animate_bg2 15s linear infinite;
   }
   .bg_area div:nth-child(6) {
-    top: 4%;
+    top: 24%;
     left: 10%;
-    animation: animate_bg 10s linear infinite;
+    animation: animate_bg 15s linear infinite;
   }
   .bg_area div:nth-child(7) {
-    top: 12%;
+    top: 50%;
     left: 90%;
-    animation: animate_bg 10s linear infinite;
+    animation: animate_bg 15s linear infinite;
   }
   .bg_area div:nth-child(8) {
-    top: 17%;
+    top: 37%;
     left: 80%;
-    animation: animate_bg2 10s linear infinite;
+    animation: animate_bg2 15s linear infinite;
   }
   .bg_area div:nth-child(9) {
-    top: 20%;
-    left: 12%;
-    animation: animate_bg 10s linear infinite;
+    top: 30%;
+    left: 50%;
+    animation: animate_bg 15s linear infinite;
   }
   .bg_area div:nth-child(10) {
-    top: 22%;
+    top: 42%;
     left: 5%;
-    animation: animate_bg2 10s linear infinite;
+    animation: animate_bg2 15s linear infinite;
   }
   .bg_area div:nth-child(11) {
-    top: 32%;
+    top: 28%;
     left: 10%;
-    animation: animate_bg 10s linear infinite;
+    animation: animate_bg2 15s linear infinite;
   }
   .bg_area div:nth-child(12) {
     top: 35%;
     left: 37%;
-    animation: animate_bg 10s linear infinite;
+    animation: animate_bg 15s linear infinite;
   }
   .bg_area div:nth-child(13) {
     top: 25%;
     left: 17%;
-    animation: animate_bg2 10s linear infinite;
+    animation: animate_bg2 15s linear infinite;
   }
   .bg_area div:nth-child(14) {
-    top: 5%;
+    top: 28%;
     right: 5%;
-    animation: animate_bg 10s linear infinite;
+    animation: animate_bg 15s linear infinite;
   }
   .bg_area div:nth-child(15) {
-    top: 10%;
+    top: 26%;
     right: 1%;
-    animation: animate_bg 10s linear infinite;
+    animation: animate_bg 15s linear infinite;
   }
   .bg_area div:nth-child(15) {
-    top: 5%;
-    left: 4%;
-    animation: animate_bg 10s linear infinite;
+    top: 29%;
+    left: 24%;
+    animation: animate_bg 15s linear infinite;
   }
   .bg_area div:nth-child(15) {
-    top: 5%;
-    right: 100%;
-    animation: animate_bg 10s linear infinite;
+    top: 39%;
+    left: 71%;
+    animation: animate_bg 15s linear infinite;
   }
   .bg_area div:nth-child(16) {
     top: 5%;
     right: 1%;
-    animation: animate_bg 10s linear infinite;
+    animation: animate_bg 15s linear infinite;
   }
   .bg_area div:nth-child(17) {
     top: 5%;
     right: 1%;
-    animation: animate_bg 10s linear infinite;
+    animation: animate_bg 15s linear infinite;
   }
   .bg_area div:nth-child(18) {
     top: 5%;
     right: 1%;
-    animation: animate_bg 10s linear infinite;
+    animation: animate_bg 15s linear infinite;
+  }
+  .bg_area div:nth-child(19) {
+    bottom: 5%;
+    right: 1%;
+    animation: animate_bg 15s linear infinite;
+  }
+  .bg_area div:nth-child(20) {
+    bottom: 5%;
+    left: 1%;
+    animation: animate_bg 15s linear infinite;
+  }
+  .bg_area div:nth-child(21) {
+    bottom: 15%;
+    right: 19%;
+    animation: animate_bg 15s linear infinite;
+  }
+  .bg_area div:nth-child(22) {
+    top: 5%;
+    right: 1%;
+    animation: animate_bg 10s ease infinite;
+  }
+  .bg_area div:nth-child(23) {
+    top: 5%;
+    right: 1%;
+    animation: animate_bg 10s ease-in-out infinite;
   }
   
   @keyframes animate_bg {
     0% {
-      transform: scale(0) translateX(0) rotate(0);
+      transform: scale(0) translateY(0);
       opacity: 1;
     }
+    5%{
+      transform: scale(0.5);
+    }
+    50%{
+      transform: scale(1.7) translateY(-30px);
+    }
     100% {
-      transform: scale(1.5) translateX(-50px) rotate(120deg);
+      transform: scale(1.5) translateY(-100px);
       opacity: 0;
     }
   }
   
   @keyframes animate_bg2 {
     0% {
-      transform: scale(0) translateZ(0) rotate(0);
+      transform: scale(0) translateY(0);
       opacity: 1;
     }
+    50%{
+      transform: scale(1.7) translateY(-50px);
+    }
     100% {
-      transform: scale(1.5) translateZ(-50px) rotate(-120deg);
+      transform: scale(1.5) translateY(-100px);
       opacity: 0;
     }
   }

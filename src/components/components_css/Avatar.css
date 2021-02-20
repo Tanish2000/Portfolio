@@ -1,0 +1,11 @@
+.AvatarImg{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+}
+
+img{
+    width : 45px;
+    height : 45px;
+    margin : 10px 10px;
+}

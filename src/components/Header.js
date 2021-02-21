@@ -8,8 +8,8 @@ const Header = ()=> {
 
     return (
         <div className="intro bg-dark text-light">
-          <BgAnimation />
           <Torch />
+          <BgAnimation />          
           <h3 className="name display-4 text-center">Tanish Singh Chouhan.</h3>
           <IntroLines />          
         </div>

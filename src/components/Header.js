@@ -7,7 +7,7 @@ import IntroLines from './sub_components/IntroLines';
 const Header = ()=> {
 
     return (
-        <div className="intro">
+        <div className="intro bg-dark text-light">
           <BgAnimation />
           <Torch />
           <h3 className="name display-4 text-center">Tanish Singh Chouhan.</h3>

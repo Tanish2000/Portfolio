@@ -1,7 +1,7 @@
 .bg_area div {
     position: fixed;
     /* text-shadow: 0 0 10px rgb(12, 12, 0), 0 0 20px rgb(189, 189, 0), 0 0 30px rgb(77, 90, 240), 0 0 40px rgb(77, 90, 240), 0 0 50px rgb(77, 90, 240), 0 0 60px rgb(77, 90, 240), 0 0 70px #e60073; */
-    text-shadow: 0px 0px 9px #f50abe, 0px 0px 15px #0097e8, 0px 0px 5px #0a41f5;
+    text-shadow: 0px 0px 9px black, 0px 0px 15px gray, 0px 0px 5px black;
   }
   
   .bg_area div:nth-child(1) {

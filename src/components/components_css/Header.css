@@ -1,12 +1,10 @@
 .intro {
     display: flex;
     flex-direction: column;
-    /* background: radial-gradient(rgb(36, 35, 35), #000); */
-    padding: 6vh;
+    background: radial-gradient(rgb(36, 35, 35), #000);
+    padding: 6vh 2vh;
     min-height: 50vh;
     align-items: center;
-    /* border-bottom: 25px solid rgba(36, 35, 35,0.8);*/
-    /* filter : blur(0.05px);  */
   }
   
 
@@ -16,11 +14,11 @@
     color: black;
     font-size: 8vw;
     letter-spacing: 3px;
-    animation: text_type 5s ease-in-out infinite alternate;
+    animation: text_type 3s ease-in-out;
     overflow: hidden;
     white-space: nowrap;
     width: 19ch;
-    transform: skewY(-3deg);
+    transform: skew(0deg);
     border-radius: 2%;
     font-weight: 650;
   }

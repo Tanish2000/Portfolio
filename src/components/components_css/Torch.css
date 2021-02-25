@@ -1,36 +1,22 @@
 .torch {
   position: absolute;
-  animation: vibrateLight 10s linear infinite;
-  transform: translateX(-660px) translateY(75px) rotate(38deg);
+  animation: vibrateLight 2.5s linear;   
+  transform: translateX(-590px) translateY(-20px);
 }
 
 @keyframes vibrateLight {
-  5% {
-    transform: translateX(-660px) translateY(75px) rotate(38deg);
+  10% {
+    transform: translateX(-370px) translateY(-20px); 
   }
-  8% {
-    transform: translateX(-650px) translateY(75px) rotate(38deg);
-  }
-  15% {
-    transform: translateX(-650px) translateY(75px) rotate(38deg);
-  }
-  30% {
-    transform: translateX(-650px) translateY(75px) rotate(38deg);
-  }
-  50% {
-    transform: translateX(-650px) translateY(78px) rotate(37deg);
-  }
-  75% {
-    transform: translateX(-650px) translateY(78px) rotate(38deg);
-  }
-  100% {
-    transform: translateX(-660px) translateY(75px) rotate(37deg);
+  100% {    
+    transform: translateX(-590px) translateY(-20px);
   }
 }
 
 .torch img {
   animation: shake 10s;
   animation-iteration-count: infinite;
+  overflow: auto;
 }
 
 @keyframes shake {
@@ -72,8 +58,8 @@
 .torch::after {
   content: "";
   position: absolute;
-  width: 65vw;
-  padding: 83px;
+  width: 60vw;
+  padding: 80px; 
   background-image: linear-gradient(
     to right,
     #fbff00,
@@ -82,23 +68,26 @@
     #f3bf04,
     #ebab12
   );
-  transform: rotate(-41.5deg) translateY(-400px) translateX(230px) skew(-10deg);
-  border-top-left-radius: 100%;
-  border-bottom-left-radius: 150%;
-  border-top-right-radius: 5%;
-  border-bottom-right-radius: 5%;
-  animation: torchlight 1s ease alternate;
   box-shadow: -5px 5px 10px rgb(0, 0, 0);
+  margin : 10px;
+  border-radius: 5%;
+  animation: torchlight 3s linear;
 }
 
 @keyframes torchlight {
   0% {
-    width: 0vw;
+    width: 40vw;
   }
-  2%{
-    width : 45vw;
+  10% {
+    width: 50vw;
+  }
+  25% {
+    width: 52vw;
+  }
+  50% {
+    width: 57vw;
   }
   100% {
-    width: 65vw;
+    width: 60vw;
   }
 }

@@ -14,7 +14,7 @@ function App() {
 
 
   return (
-    <Container fluid style={{ background: "rgb(0,0,0,0.94)" }} >
+    <Container fluid style={{ background: "rgb(0,0,0)" }} >
       <Header />
       <Container>
         <Row className="firstSection">

@@ -2,14 +2,15 @@ import React from 'react';
 import { Col, Card, Button } from 'react-bootstrap';
 import Adverfox from "../img/projects_icon/adverfox.png";
 import SatTracker from '../img/projects_icon/satellite_tracker.jpg';
-import AlVisualizer from '../img/projects_icon/alvisualizer3.jpg'
+import AlVisualizer from '../img/projects_icon/alvisualizer3.jpg';
+import './components_css/Projects.css';
 
 function Projects() {
 
     return (
         <>
-            <Col className="col-3 text-center mx-auto">
-                <Card style={{ width: '18rem', background: `black` ,  boxShadow :'inset 0 0 10px #731a1a' }}>
+            <Col className="col-3 text-center mx-auto my-3">
+                <Card style={{ width: '18rem', background: `black` ,  boxShadow :'inset 0 0 10px #731a1a' }} className = "card">
                     <Card.Img variant="top" src={Adverfox} style={{ height: '25vh', width: '12vw' }} className="mx-auto my-3" />
                     <Card.Body>
                         <Card.Title className="text-danger shadow-lg">Adverfox</Card.Title>
@@ -22,8 +23,8 @@ function Projects() {
                     </Card.Body>
                 </Card>
             </Col>
-            <Col className="col-3 text-center mx-auto">
-                <Card style={{ width: '18rem', background: `black` ,  boxShadow :'inset 0 0 10px #1a3373' }}>
+            <Col className="col-3 text-center mx-auto my-3">
+                <Card style={{ width: '18rem', background: `black` ,  boxShadow :'inset 0 0 10px #1a3373' }} className = "card">
                     <Card.Img variant="top" src={SatTracker} style={{ height: '25vh', width: '12vw' }} className="mx-auto my-3" />
                     <Card.Body>
                         <Card.Title className="text-primary shadow-lg">Satellite Tracker</Card.Title>
@@ -36,8 +37,8 @@ function Projects() {
                     </Card.Body>
                 </Card>
             </Col>
-            <Col className="col-3 text-center mx-auto">
-                <Card style={{ width: '18rem', background: `black` ,  boxShadow :'inset 0 0 10px #731a1a' }}>
+            <Col className="col-3 text-center mx-auto my-3">
+                <Card style={{ width: '18rem', background: `black` ,  boxShadow :'inset 0 0 10px #731a1a' }} className = "card">
                     <Card.Img variant="top" src={AlVisualizer} style={{ height: '25vh', width: '17vw' }} className="mx-auto my-3" />
                     <Card.Body>
                         <Card.Title className="text-danger shadow-lg">Algorithms Visualizer</Card.Title>

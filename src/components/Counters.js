@@ -4,10 +4,10 @@ import Col from "react-bootstrap/Col";
 function Counters() {
   useEffect(() => {
     setTimeout(function () {
-      document.getElementById("odometer0").innerHTML = 6700;
+      document.getElementById("odometer0").innerHTML = 3700;
       document.getElementById("odometer1").innerHTML = 10080;
       document.getElementById("odometer2").innerHTML = 3;
-    }, 800);
+    }, 1000);
   }, []);
 
   return (

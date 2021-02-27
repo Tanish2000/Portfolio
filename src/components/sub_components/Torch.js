@@ -6,7 +6,7 @@ import '../components_css/Torch.css'
 const Torch = () => {
     return (
       <div className="torch">
-        <img src={flashLight} style={{width : '190px',height : '190px'}}/>
+        <img src={flashLight} style={{width : '160px',height : '140px'}}/>
       </div>
     );
   };

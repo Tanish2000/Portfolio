@@ -1,7 +1,14 @@
-import React from 'react';
+import { React , useEffect } from 'react';
 import { ProgressBar, Col } from 'react-bootstrap';
+import  DownloadImage from "../img/Download_Animation.gif";
 
 function Skills() {
+    useEffect(() => {
+        const gif = document.getElementById('downloadImage');
+        
+    }, [])
+
+
     return (
         <>
             <style type="text/css">
@@ -38,6 +45,10 @@ function Skills() {
             </Col>
             <Col className="col-6">
                 <ProgressBar variant="custom" now={70} label={`C++- ${70}%`} className="m-3 px-1 py-1 h-75 bg-color h1" />
+            </Col>
+            <Col className="m-3 p-4 d-flex flex-column justify-content-center text-white align-items-center">
+                <h3>Download my Resume</h3>    
+                <img src={DownloadImage} id="downloadImage" style={{width : '10vw' , height:'20vh'}} onClick="ImageChange()"/>
             </Col>
         </>
     )

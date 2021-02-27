@@ -4,11 +4,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import "./App.css";
 import Header from "./components/Header";
-import Footer from "./components/Footer";
 import Avatar from "./components/Avatar";
 import AboutMe from "./components/AboutMe";
 import Counters from "./components/Counters";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 function App() {
 
@@ -28,15 +28,19 @@ function App() {
         <Row className="mx-3 py-4">
           <Counters />
         </Row>
-        <Row className="d-flex flex-column justify-content-center" id="projects">
-          <h1 className="text-center py-5 display-4 text-white"><big>Projects.</big></h1>
-          <Row className = "align-items-center">
+        <Row className="d-flex flex-column justify-content-center" id="projects" style={{background: `radial-gradient(rgb(36, 35, 35), #000)`}}>
+          <h1 className="text-center py-5 display-4 text-white">Projects.</h1>
+          <Row className="align-items-center">
             <Projects />
           </Row>
         </Row>
-
+        <Row className="d-flex flex-column justify-content-center bg-danger mt-5 p-5" id="skills" style={{background: `radial-gradient(rgb(36, 35, 35), #000)`}}>
+          <h1 className="text-center p-3 display-4 text-white">Skills.</h1>
+          <Row className="m-1">
+            <Skills />
+          </Row>
+        </Row>
       </Container>
-      {/* <Footer /> */}
     </Container>
   );
 }

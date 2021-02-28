@@ -34,9 +34,9 @@ function App() {
             <Projects />
           </Row>
         </Row>
-        <Row className="d-flex flex-column justify-content-center bg-danger mt-5 p-5" id="skills" style={{background: `radial-gradient(rgb(36, 35, 35), #000)`}}>
-          <h1 className="text-center p-3 display-4 text-white">Skills.</h1>
-          <Row className="m-1">
+        <Row className="d-flex flex-column justify-content-center bg-danger mt-5 p-4" id="skills" style={{background: `radial-gradient(rgb(36, 35, 35), #000)`}}>
+          <h1 className="text-center display-4 text-white">Skills.</h1>
+          <Row>
             <Skills />
           </Row>
         </Row>

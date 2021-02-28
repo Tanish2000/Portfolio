@@ -1,12 +1,11 @@
-import { React , useEffect } from 'react';
+import { React, useState } from 'react';
 import { ProgressBar, Col } from 'react-bootstrap';
-import  DownloadImage from "../img/Download_Animation.gif";
+import DownloadImage from "../img/downloadImage.png";
+import AnimatedDownloadImage from '../img/animatedDownloadGif.gif';
+import Resume from '../img/TanishSinghChouhan_Resume_Dec2020.pdf'
 
 function Skills() {
-    useEffect(() => {
-        const gif = document.getElementById('downloadImage');
-        
-    }, [])
+    const [animation, setanimation] = useState(false);
 
 
     return (
@@ -46,9 +45,10 @@ function Skills() {
             <Col className="col-6">
                 <ProgressBar variant="custom" now={70} label={`C++- ${70}%`} className="m-3 px-1 py-1 h-75 bg-color h1" />
             </Col>
-            <Col className="m-3 p-4 d-flex flex-column justify-content-center text-white align-items-center">
-                <h3>Download my Resume</h3>    
-                <img src={DownloadImage} id="downloadImage" style={{width : '10vw' , height:'20vh'}} onClick="ImageChange()"/>
+            <Col className="mt-3 d-flex flex-column justify-content-center text-white align-items-center">
+                <h3>Download my Resume</h3>
+                <a href={Resume} download><img src={animation ? AnimatedDownloadImage : DownloadImage} style={{ width: '10vw', height: '22vh' }} onClick={() => setanimation(prevMode => !prevMode)} />
+                </a>
             </Col>
         </>
     )

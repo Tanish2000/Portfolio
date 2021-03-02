@@ -10,7 +10,8 @@ import Counters from "./components/Counters";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Certificates from "./components/Certificates";
-import Contact from './components/Contact'
+import Contact from './components/Contact';
+import Footer from './components/Footer';
 function App() {
 
 
@@ -29,31 +30,36 @@ function App() {
         <Row className="mx-3 py-4">
           <Counters />
         </Row>
-        <Row className="d-flex flex-column justify-content-center" id="projects" style={{background: `radial-gradient(rgb(36, 35, 35), #000)`}}>
+        <Row className="d-flex flex-column justify-content-center" id="projects" style={{ background: `radial-gradient(rgb(36, 35, 35), #000)` }}>
           <h1 className="text-center py-5 display-4 text-white">Projects.</h1>
           <Row className="align-items-center">
             <Projects />
           </Row>
         </Row>
-        <Row className="d-flex flex-column justify-content-center bg-danger mt-5 p-4" id="skills" style={{background: `radial-gradient(rgb(36, 35, 35), #000)`}}>
+        <Row className="d-flex flex-column justify-content-center mt-5 p-4" id="skills" style={{ background: `radial-gradient(rgb(36, 35, 35), #000)` }}>
           <h1 className="text-center display-4 text-white">Skills.</h1>
           <Row>
             <Skills />
           </Row>
         </Row>
-        <Row className="d-flex flex-column justify-content-center bg-danger mt-5 p-2" id="skills" style={{background: `radial-gradient(rgb(36, 35, 35), #000)`}}>
+        <Row className="d-flex flex-column justify-content-center mt-5 p-2" id="skills" style={{ background: `radial-gradient(rgb(36, 35, 35), #000)` }}>
           <h1 className="text-center display-4 text-white">Certificates.</h1>
           <Row>
             <Certificates />
           </Row>
         </Row>
-        <Row className="d-flex flex-column justify-content-center bg-danger mt-5 p-2" id="skills" style={{background: `radial-gradient(rgb(36, 35, 35), #000)`}}>
+        <Row className="d-flex flex-column justify-content-center mt-5 p-2" id="skills" style={{ background: `radial-gradient(rgb(36, 35, 35), #000)` }}>
           <h1 className="text-center display-4 text-white">Let's catch up.....</h1>
           <Row>
             <Contact />
           </Row>
         </Row>
       </Container>
+      <Row fluid className = "mx-auto"  id="skills" style={{ background: `radial-gradient(rgb(36, 35, 35), #000)` }}>
+        <Row className="d-flex flex-row justify-content-center pt-4 mt-3">
+          <Footer />
+        </Row>
+      </Row>
     </Container>
   );
 }

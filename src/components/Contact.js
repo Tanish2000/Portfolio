@@ -5,7 +5,8 @@ import { Form, Button } from 'react-bootstrap';
 function Contact() {
     return (
         <div className="mx-auto w-75 p-5">
-            <Form action="https://formcarry.com/s/NOHNyYhjrp" method="POST" accept-charset="UTF-8" >
+            <h5 className = "lead text-white text-center p-3">I am always excited to work on some awesome projects, let's discuss over coffee.</h5>
+            <Form action="https://formcarry.com/s/NOHNyYhjrp" method="POST" acceptCharset="UTF-8" >
                 <Form.Group controlId="formBasicText">
                     <Form.Label className="text-white">Name</Form.Label>
                     <Form.Control type="text" placeholder="Enter your name" required name="firstName" />

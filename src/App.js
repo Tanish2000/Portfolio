@@ -55,7 +55,7 @@ function App() {
           </Row>
         </Row>
       </Container>
-      <Row fluid className = "mx-auto"  id="skills" style={{ background: `radial-gradient(rgb(36, 35, 35), #000)` }}>
+      <Row className = "mx-auto"  id="skills" style={{ background: `radial-gradient(rgb(36, 35, 35), #000)` }}>
         <Row className="d-flex flex-row justify-content-center pt-4 mt-3">
           <Footer />
         </Row>

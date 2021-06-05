@@ -1,36 +1,28 @@
 import { React, useEffect } from "react";
-import Col from "react-bootstrap/Col";
 
 function Counters() {
   useEffect(() => {
     setTimeout(function () {
       document.getElementById("odometer0").innerHTML = 3700;
-      document.getElementById("odometer1").innerHTML = 10080;
-      document.getElementById("odometer2").innerHTML = 3;
+      document.getElementById("odometer1").innerHTML = 3;
     }, 1000);
   }, []);
 
   return (
-    <>
-      <Col className="col-4 text-justify text-center">
-        <div className="odometer" style={{ fontSize: "35px" }} id="odometer0">
+    <div className="row container">
+      <div className="col-12 col-md-6 text-justify text-center">
+        <div className="odometer mt-4" style={{ fontSize: "25px" }} id="odometer0">
           1000
         </div>
-        <h4 className="text-white fw-bold m-2">Lines of Code</h4>
-      </Col>
-      <Col className="col-4 text-justify text-center">
-        <div className="odometer" style={{ fontSize: "35px" }} id="odometer1">
-          12345
-        </div>
-        <h4 className="text-white fw-bold m-2">Cups of Tea drunk</h4>
-      </Col>
-      <Col className="col-4 text-justify text-center">
-        <div className="odometer" style={{ fontSize: "35px" }} id="odometer2">
+        <h6 className="text-white">Lines of Code</h6>
+      </div>
+      <div className="col-12 col-md-6 text-justify text-center">
+        <div className="odometer mt-4" style={{ fontSize: "25px" }} id="odometer1">
           1
         </div>
-        <h4 className="text-white fw-bold m-2">Projects Completed</h4>
-      </Col>
-    </>
+        <h6 className="text-white">Projects Completed</h6>
+      </div>
+    </div>
   );
 }
 

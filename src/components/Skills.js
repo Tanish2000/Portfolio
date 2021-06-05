@@ -1,15 +1,20 @@
 import { React, useState } from 'react';
 import { ProgressBar, Col } from 'react-bootstrap';
-import DownloadImage from "../img/downloadImage.png";
-import AnimatedDownloadImage from '../img/animatedDownloadGif.gif';
+import DownloadImage from "../img/dimage.gif";
+import AnimatedDownloadImage from '../img/download.gif';
 import Resume from '../img/TanishSinghChouhan_Resume_Dec2020.pdf'
 
 function Skills() {
     const [animation, setanimation] = useState(false);
 
+    const animate = () => {
+        setanimation( prevMode=> !prevMode);
+        setTimeout( ()=> {setanimation( animation=> !animation)} , 5000 );
+    }
+
 
     return (
-        <>
+        <div className="d-flex flex-column container">
             <style type="text/css">
                 {`
                 .bg-custom {
@@ -25,32 +30,42 @@ function Skills() {
 
                 .bg-color{
                     background-image: linear-gradient(to right top, #0a0a0b, #3d2738, #803e46, #ad6937, #aaa830);
+                }
+
+                .dImage{
+                    height:auto;
+                    min-width: 20%; 
+                }
              `}
             </style>
-            <Col className="col-6">
-                <ProgressBar variant="custom" now={80} label={`HTML - ${80}%`} className="m-3 px-1 py-1 h-75 bg-color h1  rounded-left" />
-            </Col>
-            <Col className="col-6">
-                <ProgressBar variant="custom" now={65} label={`CSS- ${65}%`} className="m-3 px-1 py-1 h-75 bg-color h1" />
-            </Col>
-            <Col className="col-6">
-                <ProgressBar variant="custom" now={50} label={`JavaScript- ${50}%`} className="m-3 px-1 py-1 h-75 bg-color h1" />
-            </Col>
-            <Col className="col-6">
-                <ProgressBar variant="custom" now={40} label={`Python- ${40}%`} className="m-3 px-1 py-1 h-75 bg-color h1" />
-            </Col>
-            <Col className="col-6">
-                <ProgressBar variant="custom" now={20} label={`ML- ${20}%`} className="m-3 px-1 py-1 h-75 bg-color h1" />
-            </Col>
-            <Col className="col-6">
-                <ProgressBar variant="custom" now={70} label={`C++- ${70}%`} className="m-3 px-1 py-1 h-75 bg-color h1" />
-            </Col>
-            <Col className="mt-3 d-flex flex-column justify-content-center text-white align-items-center">
-                <h3>Download my Resume</h3>
-                <a href={Resume} download><img src={animation ? AnimatedDownloadImage : DownloadImage} style={{ width: '10vw', height: '22vh' }} onClick={() => setanimation(prevMode => !prevMode)} />
+            <div className="row mx-md-5">
+                <div className="col-md-6 col-12">
+                    <ProgressBar variant="custom" now={80} label={`HTML - ${80}%`} className="m-3 px-1 py-1 h-75 bg-color h1 rounded-left" />
+                </div>
+                <div className="col-md-6 col-12">
+                    <ProgressBar variant="custom" now={65} label={`CSS- ${65}%`} className="m-3 px-1 py-1 h-75 bg-color h1" />
+                </div>
+                <div className="col-md-6 col-12">
+                    <ProgressBar variant="custom" now={55} label={`JS- ${55}%`} className="m-3 px-1 py-1 h-75 bg-color h1" />
+                </div>
+                <div className="col-md-6 col-12">
+                    <ProgressBar variant="custom" now={45} label={`Python- ${45}%`} className="m-3 px-1 py-1 h-75 bg-color h1" />
+                </div>
+                <div className="col-md-6 col-12">
+                    <ProgressBar variant="custom" now={60} label={`C++- ${60}%`} className="m-3 px-1 py-1 h-75 bg-color h1" />
+                </div>
+                <div className="col-md-6 col-12">
+                    <ProgressBar variant="custom" now={45} label={`React- ${45}%`} className="m-3 px-1 py-1 h-75 bg-color h1" />
+                </div>
+            </div>
+
+            <div className="mt-3 d-flex flex-column justify-content-center text-white align-items-center">
+                <h6>Download Resume</h6>
+                <a href={Resume} download><img src={animation ? AnimatedDownloadImage : DownloadImage} className="dImage" onClick={animate} />
                 </a>
-            </Col>
-        </>
+            </div>
+
+        </div>
     )
 }
 

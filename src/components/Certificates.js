@@ -7,7 +7,7 @@ import Left from '../img/leftIcon.png';
 
 function Certificates() {
     return (
-        <div className="m-auto py-3 d-md-block d-none">
+        <div className="m-auto py-3 d-xl-block d-none">
             <style>
                 {`
                   .carousel-indicators li {

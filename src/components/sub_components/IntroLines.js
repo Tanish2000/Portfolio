@@ -4,7 +4,7 @@ import IndianFlag from "../../img/india.png";
 const IntroLines = () => {
   return (
     <div>
-      <h4 className="wordCarousel">    
+      <h6 className="wordCarousel">    
         <span style={{fontWeight : '200' , color : 'white'}}>I am</span>  
         <div> 
             <ul className="flip"> 
@@ -14,7 +14,7 @@ const IntroLines = () => {
                 <li>a Competitive Programmer&nbsp;<i className="fas fa-network-wired" style={{color : '#ec7efc'}}></i></li>  
             </ul>
         </div>  
-    </h4>
+    </h6>
     </div>
   );
 };

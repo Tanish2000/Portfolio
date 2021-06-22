@@ -2,7 +2,7 @@ import { React, useState } from 'react';
 import { ProgressBar, Col } from 'react-bootstrap';
 import DownloadImage from "../img/dimage.gif";
 import AnimatedDownloadImage from '../img/download.gif';
-import Resume from '../img/TanishSinghChouhan_Resume_Dec2020.pdf'
+import Resume from '../img/Resume(Tanish Singh Chouhan) June2021.pdf'
 
 function Skills() {
     const [animation, setanimation] = useState(false);

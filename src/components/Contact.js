@@ -16,7 +16,7 @@ function Contact() {
                         <Form.Control type="email" placeholder="Enter email" required name="email" />
                         <Form.Text className="text-muted">
                             I'll never share your email with anyone else.
-                    </Form.Text>
+                        </Form.Text>
                     </Form.Group>
                     <Form.Group controlId="exampleForm.ControlTextarea1">
                         <Form.Label className="text-white">Your Message</Form.Label>
@@ -25,7 +25,7 @@ function Contact() {
                     <input type="hidden" name="_gotcha" />
                     <Button variant="danger" type="submit">
                         Submit
-                </Button>
+                    </Button>
                 </Form>
             </div>
         </div>

@@ -5,7 +5,7 @@ import Instagram from '../img/instagram.svg';
 import Linkedin from '../img/linkedin.svg';
 import Github from '../img/github.svg';
 import Gmail from '../img/gmail.svg';
-import back from '../img/Slanted-Gradient.svg';
+import background from '../img/Slanted-Gradient.svg';
 
 
 
@@ -21,14 +21,14 @@ function Footer() {
             fontSize: '45px',
             textShadow: '2px 2px 2px rgb(207, 131, 131)'
         },
-        back: {
-            backgroundImage: `url(${back})`,
+        background: {
+            backgroundImage: `url(${background})`,
             backgroundSize: 'cover'
         }
 
     }
     return (
-        <div className="container-fluid p-md-5 py-2" style={Styles.back}>
+        <div className="container-fluid p-md-5 py-2" style={Styles.background}>
             <div className="row">
                 <div className="col-12">
                     <div className="row">

@@ -1,7 +1,7 @@
 .intro {
     display: flex;
     flex-direction: column;
-    background: radial-gradient(rgb(36, 35, 35), #000);
+    /* background: radial-gradient(rgb(36, 35, 35), #000); */
     padding: 6vh 2vh;
     min-height: 50vh;
     align-items: center;
@@ -39,7 +39,7 @@
   }
   
   .wordCarousel {
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 100;
     color: #939393;
     text-align: center;

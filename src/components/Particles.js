@@ -11,7 +11,7 @@ const Particle = () => {
               "enable" : false
             },
             "number": {
-              "value": 150
+              "value": 100
             },
             "size": {
               "value": 1.2
@@ -28,7 +28,7 @@ const Particle = () => {
             },
             "move": {
               "enable": true,
-              "speed": 2,
+              "speed": 1,
               "direction": "top",
               "random": true,
               "straight": false,
@@ -45,7 +45,7 @@ const Particle = () => {
             "events": {
               "onhover": {
                 "enable": true,
-                "mode": "repulse"
+                "mode": "bounce"
               }
             }
           }

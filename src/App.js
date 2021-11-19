@@ -13,13 +13,13 @@ import Skills from "./components/Skills";
 import Certificates from "./components/Certificates";
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Particle from './components/Particles';
 import './App.css';
+
 function App() {
-
-
   return (
-    <Container fluid style={{ background: "rgb(0,0,0)" }} >
-      
+    <Container fluid style={{ background: "rgb(0,0,0)", boxShadow: "rgb(114 7 19 / 91%) 1px 2px 9px 3px inset", border: "2px solid rgb(65 83 168 / 80%)", position: 'absolute' }} >
+      <Particle />
       <Header />
       <HeaderMini />
       <Container className="mx-auto">
@@ -60,7 +60,7 @@ function App() {
         </Row>
       </Container>
       <Row id="skills" style={{ background: `radial-gradient(rgb(36, 35, 35), #000)` }}>
-        <Col className="pt-4 mt-3">
+        <Col className="pt-4 mt-2 px-0">
           <Footer />
         </Col>
       </Row>

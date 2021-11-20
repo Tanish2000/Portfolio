@@ -6,13 +6,6 @@ import hopeplasma from '../img/projects_icon/blood-donation.png';
 
 function Projects() {
 
-    const styles = {
-        image: {
-            height: 'auto',
-            maxWidth: '40%'
-        }
-    }
-
     return (
 
         <div className="row">
@@ -23,7 +16,7 @@ function Projects() {
                         maxWidth: '60%'
                     }} className="my-4 mx-auto" />
                     <Card.Body>
-                        <Card.Title className="text-danger text-center">Hope Plasma </Card.Title>
+                        <Card.Title className="text-danger text-center" style={{ fontSize :'22px'}}>Hope Plasma </Card.Title>
                         <p className="text-center text-white">(Plasma Donation Website)</p>
                         <Card.Text className="text-white text-center py-2">
                             <u>Technology</u> <br /><b>MERN Stack</b> <br />
@@ -47,7 +40,7 @@ function Projects() {
                         maxWidth: '46%'
                     }} className="my-4 mx-auto py-1" />
                     <Card.Body>
-                        <Card.Title className="text-danger text-center">CpCalendar</Card.Title>
+                        <Card.Title className="text-danger text-center" style={{ fontSize :'22px'}}>CpCalendar</Card.Title>
                         <p className="text-center text-white">(Competitive Programming Calendar)</p>
                         <Card.Text className="text-white text-center ">
                             <u>Technology</u> <br /><b>MERN Stack</b> <br />
@@ -72,7 +65,7 @@ function Projects() {
                         maxWidth: '57%'
                     }} className="my-4 mx-auto py-1" />
                     <Card.Body>
-                        <Card.Title className="text-danger text-center">AstroSat</Card.Title>
+                        <Card.Title className="text-danger text-center" style={{ fontSize :'22px'}}>AstroSat</Card.Title>
                         <p className="text-center text-white">(Satellite Tracker)</p>
                         <Card.Text className="text-white  text-center py-2">
                             <u>Technology</u> <br /><b>HTML | CSS | JS</b> <br />

@@ -1,4 +1,4 @@
-import { React, useEffect } from "react";
+import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -18,11 +18,11 @@ import './App.css';
 
 function App() {
   return (
-    <Container fluid style={{ background: "rgb(0,0,0)", boxShadow: "rgb(114 7 19 / 91%) 1px 2px 9px 3px inset", border: "2px solid rgb(65 83 168 / 80%)", position: 'absolute' }} >
+    <Container fluid style={{ background: "rgba(0,0,0,0.98)", boxShadow: "rgb(41 24 22 / 88%) 0px -9px 12px 3px inset", position: 'absolute' }} >
       <Particle />
       <Header />
       <HeaderMini />
-      <Container className="mx-auto">
+      <Container className="mx-auto" style={{ zIndex : 9999 }}>
         <Row className="pt-4">
           <Col className="col-md-4 col-12">
             <Avatar />
@@ -36,7 +36,7 @@ function App() {
         </Row>
         <Row className="d-flex align-items-center justify-content-around" id="projects" style={{ background: `radial-gradient(rgb(80, 35, 35), #000)` }} >
           <div>
-            <h1 className="py-5 text-center display-4 text-white">Projects.</h1>
+            <h1 className="py-5 text-center display-4 text-white" >Projects.</h1>
             <Projects />
           </div>
         </Row>

@@ -2,7 +2,7 @@ import { React, useState } from 'react';
 import { ProgressBar, Col } from 'react-bootstrap';
 import DownloadImage from "../img/dimage.gif";
 import AnimatedDownloadImage from '../img/download.gif';
-import Resume from '../img/Resume(Tanish Singh Chouhan) June2021.pdf'
+import Resume from '../img/Resume_Tanish_Singh_Chouhan__Aug2021_.pdf'
 
 function Skills() {
     const [animation, setanimation] = useState(false);
@@ -61,7 +61,7 @@ function Skills() {
 
             <div className="mt-3 d-flex flex-column justify-content-center text-white align-items-center">
                 <h6>Download Resume</h6>
-                <a href={Resume} download><img src={animation ? AnimatedDownloadImage : DownloadImage} className="dImage" onClick={animate} />
+                <a href={Resume} download style={{ zIndex : 9999 }}><img src={animation ? AnimatedDownloadImage : DownloadImage} className="dImage" onClick={animate} alt="Resume" />
                 </a>
             </div>
 
